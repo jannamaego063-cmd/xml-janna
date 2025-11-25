@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="LucasLoaves.xsl"?>
+<!DOCTYPE Lucas_Loaves [
+<!ELEMENT Lucas_Loaves (Menu+)>
+<!ELEMENT Menu (Item_Name,Description,Price,Image)>
+<!ELEMENT Item_Name (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT Image (#PCDATA)>
+
+<!ATTLIST Menu inventory_id ID #REQUIRED>   
+]>
+
+<Lucas_Loaves>
+  <Menu inventory_id="menu1">
+    <Item_Name>SOURDOUGH WHITE</Item_Name>
+    <Description>Our standard sourdough</Description>
+    <Price>$7.00</Price>
+    <Image>food_img/Sourdough_white.jpg</Image>
+  </Menu>
+  <Menu inventory_id="menu2">
+    <Item_Name>SOURDOUGH RYE</Item_Name>
+    <Description>Sourdough created with 50% rye flour</Description>
+    <Price>$8.00</Price>
+    <Image>food_img/Sourdough_rye.jpg</Image>
+  </Menu>
+  <Menu inventory_id="menu3">
+    <Item_Name>SOURDOUGH SPELT</Item_Name>
+    <Description>Sourdough created with 100% spelt flour</Description>
+    <Price>$9.00</Price>
+    <Image>food_img/Sourdough_spelt.jpg</Image>
+  </Menu>
+  <Menu inventory_id="menu4">
+    <Item_Name>SOURDOUGH SEEDED</Item_Name>
+    <Description>Sourdough including a mixture of yummy seeds</Description>
+    <Price>$9.50</Price>
+    <Image>food_img/Sourdough_seeded.jpg</Image>
+  </Menu>
+</Lucas_Loaves>
+
